@@ -5,6 +5,9 @@ Ingest data comming from a Kafka Topic and push it to ScyllaBD using the Tokio C
 ## Architecture
 
 
+![andean_pipelin](https://github.com/jcalahor/andean_pipeline/assets/7434088/bb81a4be-55e7-4383-a2cb-d69c6058146c)
+
+
 As the diagram shows the data is produced by the Data Pusher, the type of data is Pricing info of few stocks. 
 
 The pusher runs on it's own docker container.
