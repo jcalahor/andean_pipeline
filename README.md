@@ -1,6 +1,6 @@
 # Andean Pipeline
 
-Ingest data comming from a Kafka Topic and push it to ScyllaBD using the Tokio Crate
+Ingest data comming from a Kafka Topic and push (at high speed) it to ScyllaBD using the Tokio Crate
 
 ## Architecture
 
@@ -16,10 +16,10 @@ The Kafka component  also run in a separate container, not much to talk here.
 
 The pipeline worker is a Rust application that runs in other container that contains the logic to consume the data comming from Kafka and then forwarding this data to an insertor module which will insert it to the ScyllaBD
 
-By taking advantage of the asynch capabilities of the crate Tokio the communication between the consumer and the insertor tasks are relative trivial.
+By taking advantage of the asynch capabilities of the Tokio crate the communication between the consumer and the insertor tasks are relative trivial.
 
 For more info on Tokio: https://tokio.rs/ 
-
+For more info on ScyllaDB: https://www.scylladb.com/
 
 ## Data Format
 
