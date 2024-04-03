@@ -19,6 +19,7 @@ The pipeline worker is a Rust application that runs in other container that cont
 By taking advantage of the asynch capabilities of the Tokio crate the communication between the consumer and the insertor tasks are relative trivial.
 
 For more info on Tokio: https://tokio.rs/ 
+
 For more info on ScyllaDB: https://www.scylladb.com/
 
 ## Data Format
