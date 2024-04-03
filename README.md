@@ -12,7 +12,7 @@ As the diagram shows the data is produced by the Data Pusher, the type of data i
 
 The pusher runs on it's own docker container.
 
-The Kafka compoent also run in separate container, not much to talk here.
+The Kafka component  also run in separate container, not much to talk here.
 
 The pipeline works is a Rust application that runs in other container that contains the logic to consume the data comming from Kafka and then forwarding this data to a insertor module which will insert it to the ScyllaBD
 
